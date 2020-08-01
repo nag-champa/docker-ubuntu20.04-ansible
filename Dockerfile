@@ -4,7 +4,7 @@
 FROM ubuntu:20.04
 
 # Label
-LABEL dexription="Ubuntu Ansible Container"
+LABEL desription="Ubuntu Ansible Container"
 
 # Disable Prompt During Packages Installation
 ARG DEBIAN_FRONTEND=noninteractive

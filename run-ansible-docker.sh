@@ -6,6 +6,6 @@
 
 docker run -it --rm \
 --hostname ansible \
--w /home/ansible/ansible/ \
+-w /root/ansible/ \
 -v ~/ansible/:/root/ansible \
--v ~/.ssh:/root/.ssh/ ansible-ubuntu:1.2 /bin/bash
+-v ~/.ssh:/root/.ssh/ ansible-ubuntu /bin/bash
