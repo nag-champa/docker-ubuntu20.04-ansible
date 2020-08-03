@@ -2,4 +2,4 @@
 
 # Build docker ansible image
 
-docker build -t ansible-ubuntu .
+docker build --no-cache -t ansible-ubuntu .

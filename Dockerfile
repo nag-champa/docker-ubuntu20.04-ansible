@@ -27,8 +27,9 @@ RUN apt install python3-docker -y
 #RUN pip3 install docker
 
 # Add ansible user in image -- if needed.
-# RUN useradd -d /home/ansible -m -p ansible -b /home -s /bin/bash -k /etc/skel ansible
+RUN groupadd -g 1000 ansible
+RUN useradd -d /home/ansible -m -p ansible -b /home -s /bin/bash -k /etc/skel -u 1000 -g 1000 ansible
 
 # Set environment 
-USER root
-WORKDIR /root
+USER ansible
+WORKDIR /home/ansible
